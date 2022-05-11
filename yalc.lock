@@ -1,0 +1,9 @@
+{
+  "version": "v1",
+  "packages": {
+    "my-app": {
+      "signature": "55cef19e97f3842fc0a15bbbcd7d3e3d",
+      "file": true
+    }
+  }
+}

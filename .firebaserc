@@ -1,0 +1,7 @@
+{
+  "projects": {
+    "default": "muhasebe-trakya",
+    "muhasebe": "muhasebe-trakya"
+  },
+  "targets": {}
+}
