@@ -60,9 +60,11 @@ const handleChange = ({ selectedRows }) => {
 };
 const deleteSelecteds = () => {
   selecteds.map((item) => {
-    const ref = doc(firestore, `data/${email()}/boyut`, item.isim);
+    console.log(item)
+    const ref = doc(firestore, `data/${email()}/boyut`, item.boyut);
     deleteDoc(ref)
   })
+  tempData = []
   const collectionRef = collection(firestore,`data/${email()}/boyut`);
   getDocs(collectionRef).then((response) => {
     response.docs.map((item) => {

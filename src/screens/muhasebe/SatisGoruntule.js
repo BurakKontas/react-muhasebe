@@ -135,7 +135,7 @@ const handleChange = ({ selectedRows }) => {
 };
 const deleteSelecteds = () => {
   selecteds.map((item) => {
-    const ref = doc(firestore, `data/${email()}/genel`, item.id);
+    const ref = doc(firestore, `data/${email()}/genel`, `${item.id}`);
     deleteDoc(ref)
   })
   const collectionRef = collection(firestore,`data/${email()}/genel`);

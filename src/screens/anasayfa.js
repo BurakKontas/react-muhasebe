@@ -177,7 +177,7 @@ export const Anasayfa = ({navigation}) => {
                 <List.Subheader style={{fontWeight:"bold",fontSize:18}}>Ödenecekler</List.Subheader>
                 {(odemeler.length != 0) ?
                   odemeler.map((item) => {
-                  return (<List.Item left={props => <List.Icon {...props} icon="briefcase-outline" />} onPress={() => {navigation.push("odeme")}} title={item.date} style={[styles.todo,{backgroundColor:(item.islem == 1) ? "#9cfc5b" : "#fc5b70"}]} description={item.description} />);
+                  return (<List.Item left={props => <List.Icon {...props} icon={{uri:"https://img.icons8.com/external-those-icons-lineal-those-icons/344/external-briefcase-business-those-icons-lineal-those-icons-1.png"}} />} onPress={() => {navigation.push("odeme")}} title={item.date} style={[styles.todo,{backgroundColor:(item.islem == 1) ? "#9cfc5b" : "#fc5b70"}]} description={item.description} />);
                   })
                   :
                   <Text style={{color: colors.primary,fontSize: 16,fontWeight:"bold",marginLeft:15}}>Herhangi Bir Ödemeniz Yok</Text>
@@ -190,7 +190,7 @@ export const Anasayfa = ({navigation}) => {
                 <List.Subheader style={{fontWeight:"bold",fontSize:18}}>Yapılacaklar</List.Subheader>
                 {(todo.length != 0) ? 
                   todo.map((item) => {
-                  return (<List.Item left={props => <List.Icon {...props} icon="exclamation-thick" />} onPress={() => {navigation.push("yapilacaklar")}} title={item.tarih} style={[styles.todo,{backgroundColor:oncelik(item.prio)}]} description={item.todo} />);
+                  return (<List.Item left={props => <List.Icon {...props} icon={{uri:"https://img.icons8.com/ios/344/todo-list--v1.png"}} />} onPress={() => {navigation.push("yapilacaklar")}} title={item.tarih} style={[styles.todo,{backgroundColor:oncelik(item.prio)}]} description={item.todo} />);
                   })
                   :
                   <Text style={{color: colors.primary,fontSize: 16,fontWeight:"bold",marginLeft:15}}>Yapılacak Birşeyiniz Yok</Text>

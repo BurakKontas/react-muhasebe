@@ -164,7 +164,7 @@ const navGoto = (screen) => {
                   label: 'Destek',
                   onPress: () =>{
                     if(route.name != "destek")
-                    navGoto("destek")
+                    console.log("destek")
                     },
                 },
                 {
