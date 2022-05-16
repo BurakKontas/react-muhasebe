@@ -17,3 +17,6 @@ dosyaya girip cmd yi açıp **yarn install** veya **npm install** yazınız. (np
 
 
 sonrasında o cmd işlemi bittikten sonra (yarn web - npm start - expo start --web) üçünden birini yazıp projeyi başlatabilirsiniz
+
+
+bilgisayarınızn çözünürlüğünün 1920x1080 olmasına ve çözünürlük ayarları (display settings) kısmında ölçeklendirmenin (scale) %100 olmasına dikkat ediniz
