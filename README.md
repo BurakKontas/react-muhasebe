@@ -16,4 +16,4 @@ sonra firebase-config.js dosyasını güncelleyin
 dosyaya girip cmd yi açıp **yarn install** veya **npm install** yazınız. (npm install olmazsa npm install --force)
 
 
-sonrasında o cmd işlemi bittikten sonra (yarn web - npm start - expo start --web) yazıp projeyi başlatabilirsiniz
+sonrasında o cmd işlemi bittikten sonra (yarn web - npm start - expo start --web) üçünden birini yazıp projeyi başlatabilirsiniz
